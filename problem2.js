@@ -15,10 +15,18 @@ var fibonacci = function(number){
 
 fibonacci(32);
 
-
-
-
-
-
 // 2. find the even valued terms
+var even = function(value){
+  if(value % 2 === 0 ){
+    return value
+  }
+}
+var evenArray = array.filter(even);
+
+console.log(evenArray);
 // 3. add the terms
+var total = 0;
+for (var i = 0; i < evenArray.length; i++) {
+  total += evenArray[i]
+}
+console.log(total);
